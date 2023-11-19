@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Timetable Preference</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Set Your Preferred Timings</h1>
+        <form action="/submit-preference" method="POST">
+
+            <label for="facultyID">Faculty ID:</label>
+            <input type="text" id="facultyID" name="facultyID" required><br><br>
+
+            <label for="facultyName">Faculty Name:</label>
+            <input type="text" id="facultyName" name="facultyName" required><br><br>
+
+            <label for="ProgramID">Select Program:</label>
+            <select id="ProgramID" name="ProgramID">
+            <!-- Options for courses will be dynamically populated from the database -->
+            <option value="CSCI101">BTech Computer Science</option>
+            <option value="MATH201">Btech Mechanical</option>
+            <option value="CSCI101">Mtech Data Analytics</option>
+            </select><br><br>
+
+            <label for="Year">Select Year:</label>
+            <select id="Year" name="Year">
+            <!-- Options for courses will be dynamically populated from the database -->
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+            </select><br><br>
+            
+            <label for="courseID">Select Course:</label>
+            <select id="courseID" name="courseID">
+            <!-- Options for courses will be dynamically populated from the database -->
+            <option value="CSCI101">Introduction to Machine Learning</option>
+            <option value="MATH201">Next Generation Databases</option>
+            <option value="CSCI101">Big Data Analytics</option>
+            <option value="CSCI101">Computer Science</option>
+            <option value="MATH201">Calculus II</option>
+            </select><br><br>
+
+            <label for="day">Select Preferred Day:</label>
+            <select id="day" name="day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            </select><br><br>
+
+            <label for="Slot">Select Preferred Slot:</label>
+            <select id="SLot" name="Slot">
+            <!-- Options for courses will be dynamically populated from the database added by admin -->
+            <option value="1">8:30 - 9:30</option>
+            <option value="2">9:30 - 10:30</option>
+            <option value="1">10:30 - 11:30</option>
+            <option value="2">11:30 - 12:30</option>
+            <option value="1">2:30 - 3:30</option>
+            <option value="2">3:30 - 4:30</option>
+            </select><br><br>
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

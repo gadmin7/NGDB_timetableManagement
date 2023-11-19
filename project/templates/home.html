@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Timetable Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .card {
+            background-color:#CACAB1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h2 {
+            color: black;
+        }
+
+        .options {
+            margin-top: 10px;
+        }
+
+        .options a {
+            display: block;
+            margin-top: 10px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .options a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to University Timetable Management</h1>
+
+        <!-- Faculty Card -->
+        <div class="card">
+            <h2>Faculty</h2>
+            <div class="options">
+                <a href="faculty_preference.html">Add Preference</a>
+                <a href="faculty_timetable.html">View Timetable</a>
+            </div>
+        </div>
+
+        <!-- Student Card -->
+        <div class="card">
+            <h2>Student</h2>
+            <div class="options">
+                <a href="student_timetable.html">View Timetable</a>
+            </div>
+        </div>
+
+        <!-- HOD Card -->
+        <div class="card">
+            <h2>Head of Department (HOD)</h2>
+            <div class="options">
+                <a href="hod_timetable.html">View Personal Timetable</a>
+                <a href="faculty_timetable.html">View Faculty Timetable</a>
+            </div>
+        </div>
+
+        <!-- Admin Card -->
+        <div class="card">
+            <h2>Admin</h2>
+            <div class="options">
+                <a href="admin.html">Go to Admin Dashboard</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

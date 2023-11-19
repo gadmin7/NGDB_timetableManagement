@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card {
+            flex: 1;
+            background-color: #CACAB1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"], 
+        .form-group input[type="number"], 
+        .form-group input[type="time"] {
+            width: calc(100% - 18px);
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-top: 5px;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin DashBoard</h1>
+        <br><br>
+    <div class="container">
+        <!-- Left Side -->
+        <div class="card">
+            <h2>Slot Timing Management</h2>
+            <div class="form-group">
+                <label for="slotTiming">Add Slot Timing:</label>
+                <input type="time" id="slotTiming">
+                <br>
+                <button class="btn">Add</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Holiday Management</h2>
+            <div class="form-group">
+                <label for="holidayDate">Mark Holiday Date:</label>
+                <input type="date" id="holidayDate">
+                <br><br>
+                <button class="btn">Mark</button>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="card">
+            <h2>Enable Faculty Preference Filling</h2>
+            <div class="form-group">
+                <label for="enablePreference">Enable Faculty Preference Filling:</label>
+                <input type="checkbox" id="enablePreference">
+                <br><br>
+                <button class="btn">Save</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Manage Faculty Members</h2>
+            <div class="form-group">
+                <label for="facultyManagement">Select Action:</label>
+                <select id="facultyManagement">
+                    <option value="addFaculty">Add New Faculty</option>
+                    <option value="editFaculty">Edit Faculty Details</option>
+                    <option value="removeFaculty">Remove Faculty</option>
+                </select>
+                <br>
+                <br>
+                <button class="btn">Go</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

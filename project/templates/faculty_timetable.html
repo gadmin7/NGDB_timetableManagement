@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #CACAB1 ;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: white ;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, [Faculty Name]!</h1>
+        <h2>Your Timetable:</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Slot</th>
+                <th>Program</th>
+                <th>Year</th>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Room</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <th>1</th>
+                <th>Mtech Data Analytics</th>
+                <th>1st Year</th>
+                <th>DA121</th>
+                <th>Advanced ML</th>
+                <th>Logos - 107</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <th>2</th>
+                <th>Btech Computer Science</th>
+                <th>3rd Year</th>
+                <th>CS145</th>
+                <th>Machine Learning</th>
+                <th>Orion - 121</th>
+            </tr>
+            <!-- Timetable data will be dynamically populated here -->
+        </table>
+    </div>
+</body>
+</html>
